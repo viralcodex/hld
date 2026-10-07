@@ -1,0 +1,4 @@
+topic: Key generation, read-heavy caching, estimation
+tier: 1
+difficulty: Easy
+product: TinyURL / Bit.ly

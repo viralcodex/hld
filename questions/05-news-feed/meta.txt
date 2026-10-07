@@ -1,0 +1,4 @@
+topic: Fan-out on write vs read, celebrity problem, ranking
+tier: 2
+difficulty: Medium
+product: Twitter / X timeline

@@ -1,0 +1,4 @@
+topic: Inventory concurrency, holds/locks, no double-booking, ACID
+tier: 4
+difficulty: Hard
+product: BookMyShow / Ticketmaster

@@ -1,0 +1,4 @@
+topic: Object storage, CDN, feed+media split, thumbnail pipeline
+tier: 3
+difficulty: Medium
+product: Instagram

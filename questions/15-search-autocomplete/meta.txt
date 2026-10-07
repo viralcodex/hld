@@ -1,0 +1,4 @@
+topic: Trie, prefix sharding, ranking, read caching, freshness
+tier: 5
+difficulty: Hard
+product: Google search autocomplete

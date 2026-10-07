@@ -1,0 +1,4 @@
+topic: BFS frontier, politeness, dedup, distributed workers
+tier: 5
+difficulty: Medium
+product: Googlebot web crawler

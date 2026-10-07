@@ -1,0 +1,4 @@
+topic: WebSockets, presence, receipts, message store
+tier: 2
+difficulty: Medium
+product: WhatsApp / Messenger

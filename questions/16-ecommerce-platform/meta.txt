@@ -1,0 +1,4 @@
+topic: Composing subsystems, inventory+payment consistency, order saga
+tier: Capstone
+difficulty: Hard
+product: Amazon e-commerce platform

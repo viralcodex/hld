@@ -1,0 +1,4 @@
+topic: Spatial indexing, read-heavy geo queries, ranking
+tier: 4
+difficulty: Medium
+product: Yelp / nearby places

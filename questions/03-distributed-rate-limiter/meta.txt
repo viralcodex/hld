@@ -1,0 +1,4 @@
+topic: Token/leaky bucket, Redis counters, placement
+tier: 1
+difficulty: Medium
+product: API gateway rate limiter

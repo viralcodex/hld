@@ -1,0 +1,4 @@
+topic: Consistent hashing, eviction, replication, coherence
+tier: 1
+difficulty: Medium
+product: Redis / Memcached as a service

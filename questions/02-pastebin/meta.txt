@@ -1,0 +1,4 @@
+topic: Blob vs metadata split, TTL/expiry, CDN reads
+tier: 1
+difficulty: Easy
+product: Pastebin / GitHub Gist

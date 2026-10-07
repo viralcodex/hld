@@ -1,0 +1,4 @@
+topic: Upload/transcode pipeline, ABR + CDN, metadata vs blobs
+tier: 3
+difficulty: Hard
+product: YouTube / Netflix

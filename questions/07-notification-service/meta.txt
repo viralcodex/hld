@@ -1,0 +1,4 @@
+topic: Queues, provider adapters, retries, dedup, preferences
+tier: 2
+difficulty: Medium
+product: Push / SMS / email notification service

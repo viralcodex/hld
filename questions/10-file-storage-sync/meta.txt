@@ -1,0 +1,4 @@
+topic: Chunking, dedup, sync/conflict, metadata vs blocks
+tier: 3
+difficulty: Hard
+product: Dropbox / Google Drive
