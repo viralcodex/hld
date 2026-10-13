@@ -2,18 +2,18 @@
 
 Auto-ish: I update this each time I grade a design. **PASS = 7+/10.**
 
-Last updated: _not started yet_
+Last updated: 2026-10-09
 
 ## Progress
 
 | # | Question | Tier | Difficulty | Status | Best score | Last graded | Notes |
 |---|----------|------|-----------|--------|-----------|-------------|-------|
-| 01 | URL Shortener | 1 | Easy | Not started | – | – | |
-| 02 | Pastebin | 1 | Easy | Not started | – | – | |
-| 03 | Distributed Rate Limiter | 1 | Medium | Not started | – | – | |
-| 04 | Distributed Cache | 1 | Medium | Not started | – | – | |
-| 05 | News Feed / Timeline | 2 | Medium | Not started | – | – | |
-| 06 | Chat System | 2 | Medium | Not started | – | – | |
+| 01 | URL Shortener | 1 | Easy | Passed | 9 | 2026-10-07 | Added estimation, sharding+replicas, PG-over-KV justification. For 10: state reads/s (~116K), uniqueness mechanism, consistency stance |
+| 02 | Pastebin | 1 | Easy | Passed | 10 | 2026-10-09 | Blob/metadata split nailed; pre-signed direct upload + PENDING/SUCCESS status state machine; triple expiry. Nits: explicit id-gen, public listing, CDN purge-on-expiry |
+| 03 | Distributed Rate Limiter | 1 | Medium | Passed | 9 | 2026-10-09 | Gateway placement, token bucket justified, fail-closed + config via etcd. For 10: counter TTL, name sync-interval leak bound, draw atomic Redis INCR/Lua fallback |
+| 04 | Distributed Cache | 1 | Medium | Passed | 9 | 2026-10-09 | Ring + vnodes + gossip + master-slave HA + cache-aside + request collapsing. For 10: quantify hash%N remap, draw LRU map+DLL, show put/delete+TTL path, staggered-TTL for hot-key expiry |
+| 05 | News Feed / Timeline | 2 | Medium | Passed | 10 | 2026-10-10 | Full hybrid fan-out (push non-celeb / pull celeb), async via MQ, estimates, media+CDN, ranking, pagination. Probe: celeb threshold (100k vs 100M), follow back-fill, bidirectional graph index |
+| 06 | Chat System | 2 | Medium | Passed | 9 | 2026-10-12 | WS gateways + Redis conn registry + pub/sub routing + inbox store-and-forward + receipts-after-persist + clientId dedup. For 10: presence heartbeats/sampled fan-out, partition messages by chatId, define orderId assignment |
 | 07 | Notification Service | 2 | Medium | Not started | – | – | |
 | 08 | Photo Sharing | 3 | Medium | Not started | – | – | |
 | 09 | Video Streaming | 3 | Hard | Not started | – | – | |
@@ -27,9 +27,9 @@ Last updated: _not started yet_
 
 ## Summary
 
-- **Attempted:** 0 / 16
-- **Passed (7+):** 0 / 16
-- **Average score:** –
+- **Attempted:** 6 / 16
+- **Passed (7+):** 6 / 16
+- **Average score:** 9.3
 
 ## Legend
 
