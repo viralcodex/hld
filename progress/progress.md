@@ -2,7 +2,7 @@
 
 Auto-ish: I update this each time I grade a design. **PASS = 7+/10.**
 
-Last updated: 2026-10-09
+Last updated: 2026-10-13
 
 ## Progress
 
@@ -14,7 +14,7 @@ Last updated: 2026-10-09
 | 04 | Distributed Cache | 1 | Medium | Passed | 9 | 2026-10-09 | Ring + vnodes + gossip + master-slave HA + cache-aside + request collapsing. For 10: quantify hash%N remap, draw LRU map+DLL, show put/delete+TTL path, staggered-TTL for hot-key expiry |
 | 05 | News Feed / Timeline | 2 | Medium | Passed | 10 | 2026-10-10 | Full hybrid fan-out (push non-celeb / pull celeb), async via MQ, estimates, media+CDN, ranking, pagination. Probe: celeb threshold (100k vs 100M), follow back-fill, bidirectional graph index |
 | 06 | Chat System | 2 | Medium | Passed | 9 | 2026-10-12 | WS gateways + Redis conn registry + pub/sub routing + inbox store-and-forward + receipts-after-persist + clientId dedup. For 10: presence heartbeats/sampled fan-out, partition messages by chatId, define orderId assignment |
-| 07 | Notification Service | 2 | Medium | Not started | – | – | |
+| 07 | Notification Service | 2 | Medium | Passed | 9 | 2026-10-13 | Kafka per-channel topics + async workers + EB/jitter retry + DLQ + Redis claim-based idempotency + separate batched/sharded promo pipeline + strong estimates (TPP latency = bottleneck). For 10: proactive per-provider rate limiter, adapter interface, state at-least-once+idempotent guarantee |
 | 08 | Photo Sharing | 3 | Medium | Not started | – | – | |
 | 09 | Video Streaming | 3 | Hard | Not started | – | – | |
 | 10 | File Storage & Sync | 3 | Hard | Not started | – | – | |
@@ -27,8 +27,8 @@ Last updated: 2026-10-09
 
 ## Summary
 
-- **Attempted:** 6 / 16
-- **Passed (7+):** 6 / 16
+- **Attempted:** 7 / 16
+- **Passed (7+):** 7 / 16
 - **Average score:** 9.3
 
 ## Legend
