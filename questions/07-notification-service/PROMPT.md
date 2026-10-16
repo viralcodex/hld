@@ -14,8 +14,9 @@ liked your photo", "OTP code 123456". It must fan a single logical notification 
 right channels, respect user preferences, and reliably deliver through flaky third-party
 providers.
 
-This is a classic **async, queue-driven** design where third-party failure handling and
-exactly-the-right-number-of-times delivery are the meat.
+This is a classic **async, queue-driven** design where your service hands off actual
+delivery to **third-party providers** (APNs/FCM, Twilio, SES) — so third-party failure
+handling and exactly-the-right-number-of-times delivery are the meat.
 
 ### Functional requirements
 
