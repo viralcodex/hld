@@ -2,7 +2,7 @@
 
 Auto-ish: I update this each time I grade a design. **PASS = 7+/10.**
 
-Last updated: 2026-10-13
+Last updated: 2026-10-17
 
 ## Progress
 
@@ -16,7 +16,7 @@ Last updated: 2026-10-13
 | 06 | Chat System | 2 | Medium | Passed | 9 | 2026-10-12 | WS gateways + Redis conn registry + pub/sub routing + inbox store-and-forward + receipts-after-persist + clientId dedup. For 10: presence heartbeats/sampled fan-out, partition messages by chatId, define orderId assignment |
 | 07 | Notification Service | 2 | Medium | Passed | 9 | 2026-10-13 | Kafka per-channel topics + async workers + EB/jitter retry + DLQ + Redis claim-based idempotency + separate batched/sharded promo pipeline + strong estimates (TPP latency = bottleneck). For 10: proactive per-provider rate limiter, adapter interface, state at-least-once+idempotent guarantee |
 | 08 | Photo Sharing | 3 | Medium | Not started | – | – | |
-| 09 | Video Streaming | 3 | Hard | Not started | – | – | |
+| 09 | Video Streaming | 3 | Hard | Passed | 10 | 2026-10-17 | Full async transcode pipeline (queue + parallel worker fleet + status flip) + ABR HLS/DASH manifest + CDN with cold-miss backfill + LRU/request-collapsing for viral + chunk/<quality> layout + dedup/batch metrics pipeline (Spark/Flink→Cassandra) + multi-region + strong estimates. Nits: resumable multipart upload, search index, state egress-cost + ABR-vs-mp4 theses |
 | 10 | File Storage & Sync | 3 | Hard | Not started | – | – | |
 | 11 | Ride-Sharing | 4 | Hard | Not started | – | – | |
 | 12 | Proximity Service | 4 | Medium | Not started | – | – | |
@@ -27,9 +27,9 @@ Last updated: 2026-10-13
 
 ## Summary
 
-- **Attempted:** 7 / 16
-- **Passed (7+):** 7 / 16
-- **Average score:** 9.3
+- **Attempted:** 8 / 16
+- **Passed (7+):** 8 / 16
+- **Average score:** 9.4
 
 ## Legend
 
